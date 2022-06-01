@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    background-color: #272727;
+    color: whitesmoke;
+}
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navMenu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+.navMenu a:hover {
+    color: #fddb3a;
+  }
+header{
+    margin-top: 100pw;
+    text-align: center;
+}
+header h1 {
+    font-size: 2em;
+    letter-spacing: 0.3em;  
+}
+header p {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+.codes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    border: solid 1px #fddb3a;
+    border-radius: 8px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 30px;
+    line-height: 25px;
+}
+
+
+  @keyframes color-change-2x {
+    0% {
+      background: #272727;
+      color: whitesmoke;
+    }
+    5% {
+      background: #fddb3a;
+      color: #272727;
+    }
+    100% {
+      background: #fddb3a;
+      color: #272727;
+    }
+  }
+  
+.button:hover {
+    animation: color-change-2x 10s ease-in-out;
+}
+
